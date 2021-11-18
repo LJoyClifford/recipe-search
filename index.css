@@ -46,3 +46,14 @@ div.section {
     height: 3em;
     padding: 0;
 }
+
+::placeholder {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    letter-spacing: .1em;
+    padding: .5em;
+    text-shadow: -1px -1px 0 rgb(247, 241, 241), 1px -1px 0 rgb(247, 241, 241),
+        -1px 1px 0 rgb(247, 241, 241), 1px 1px 0 rgb(247, 241, 241);
+}
