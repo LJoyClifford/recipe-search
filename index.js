@@ -34,3 +34,7 @@ searchInputDom.addEventListener("keypress", function (e) {
       recipeContainer.addEventListener("mouseleave", function () {
         title.innerText = recipe.title;
       });
+
+      let recipeImg = document.createElement("img");
+      recipeImg.src = recipe.image;
+      recipeContainer.appendChild(recipeImg);
