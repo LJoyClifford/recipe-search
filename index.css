@@ -31,3 +31,13 @@ div.section {
     margin-top: .5em;
     margin-bottom: .5em;
 }
+
+#header-img {
+    background-image: url("https://fs02.vseosvita.ua/020125a6-97c9-378x191.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    left: 30%;
+    right: 30%;
+    height: 25em;
+}
