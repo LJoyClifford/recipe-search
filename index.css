@@ -165,3 +165,151 @@ img {
                 .delete-bttn:hover {
                 background-color: rgb(223, 18, 18);
                 }
+
+                div#title-section h2 {
+                    font-size: 5.5em;
+                }
+                
+                #title-section h2, 
+                #show-header {
+                  font-family: 'Mr Dafoe';
+                  margin: 0;
+                  font-size: 3.5em;
+                  color: white;
+                  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe0505, 0 0 0.3em #fe0505;
+                }
+                footer#branding {
+                    color: black;
+                    width: 60%;
+                    left: 30%;
+                    right: 30%;
+                }
+                
+                footer small {
+                    color: white;
+                }
+                
+                .card.alert-warning {
+                    padding: 20px; 
+                    margin: 20px;
+                }
+                
+                #message-banner {
+                    width: 60%;
+                    left: 20%;
+                    right: 20%;
+                    text-align: center;
+                }
+                
+                .alert {
+                    background-color: tomato;
+                }
+                .warning {
+                    background-color: yellow;
+                }
+                .success {
+                    background-color: yellowgreen;
+                }
+                
+                .hide {
+                    display: none;
+                }
+                
+                    #recipes-list {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding: 10px;
+                        background-color: antiquewhite;
+                        position: relative;
+                      }
+                      #recipes-header {
+                        color: white;
+                      }
+                      
+                      .recipe {
+                        width: 200px;
+                        height: 250px;
+                        margin: 10px;
+                        padding: 10px;
+                        background-color: beige;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+                        transition: all 1s;
+                      }
+                      .recipe:hover {
+                        transform: scale(1.1);
+                      }
+                      .recipe.liked {
+                        background-color: indianred;
+                      }
+                      
+                .recipe .likeBtn {
+                    display: none;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 50px;
+                    color: palevioletred;
+                    position: absolute;
+                    left: calc(50% - 25px);
+                    bottom: 100px;
+                    cursor: pointer;
+                  }
+                  .recipe.liked .likeBtn {
+                    color: rgb(223, 18, 18);
+                  }
+                  .recipe.liked:not(.selected) .likeBtn {
+                    display: block;
+                  }
+                  .recipe:not(.selected):hover > .likeBtn {
+                    display: block;
+                  }
+                  .recipe:not(.selected):hover > img {
+                    opacity: 0.4;
+                  }
+                
+                  .recipe .title {
+                    color: black;
+                    cursor: pointer;
+                  }
+                  .recipe.liked .title {
+                    font-weight: bold;
+                    color: white;
+                  }
+                  .recipe img {
+                    height: 200px;
+                    width: 180px;
+                    object-fit: contain;
+                  }
+                  .recipe .summary {
+                    font-style: italic;
+                  }
+                  .recipe.selected {
+                    position: absolute;
+                    width: 50%;
+                    left: 25%;
+                    top: 10%;
+                    background-color: aliceblue;
+                    padding: 20px;
+                    border: 1px solid grey;
+                    border-radius: 10px;
+                    height: auto;
+                    z-index: 2;
+                  }
+                  .recipe.selected .close {
+                    display: block;
+                  }
+                  
+                  .close {
+                    display: none;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                  }
+                  
+                  
+                
