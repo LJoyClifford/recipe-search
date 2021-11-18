@@ -137,3 +137,31 @@ img {
             label {
             color: rgb(83, 79, 79);
             }
+
+            #show-form-container {
+                margin-top: 25px;
+                display: flex;
+                justify-content: center;
+                }
+                
+                .like-bttn {
+                color: red;
+                font-size: larger;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                }
+                
+                .like-bttn:hover {
+                color: white;
+                background-color: red;
+                }
+                
+                .delete-bttn {
+                color: red;
+                font-size: large;
+                }
+                
+                .delete-bttn:hover {
+                background-color: rgb(223, 18, 18);
+                }
