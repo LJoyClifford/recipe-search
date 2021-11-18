@@ -90,3 +90,13 @@ searchInputDom.addEventListener("keypress", function (e) {
         summaryDom.innerHTML = recipe.summary;
         recipeContainer.appendChild(summaryDom);
         recipeContainer.classList.add("selected");
+
+        closeBtn.onclick = function (e) {
+            e.stopPropagation();
+            recipeContainer.classList.remove("selected");
+            recipeContainer.removeChild(summaryDom);
+          };
+        });
+    });
+  });
+  }
