@@ -20,4 +20,8 @@ Please make sure to update tests as appropriate.
 
 ## License
 
+<<<<<<< HEAD
 [MIT](https://choosealicense.com/licenses/mit/)
+=======
+[MIT](https://choosealicense.com/licenses/mit/)
+>>>>>>> 226ec7f30a1f4da3f1c10d082d403d10739f8d67
