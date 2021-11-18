@@ -38,3 +38,14 @@ searchInputDom.addEventListener("keypress", function (e) {
       let recipeImg = document.createElement("img");
       recipeImg.src = recipe.image;
       recipeContainer.appendChild(recipeImg);
+
+      let likeBtn = document.createElement("button");
+      likeBtn.innerHTML = "&#10084;";
+      likeBtn.addEventListener("mouseover", function (e) {
+        e.stopPropagation();
+        if (recipeContainer.classList.contains("liked")) {
+          title.innerText = "Remove this recipe to favorites";
+        } else {
+          title.innerText = "Add this recipe to favorites";
+        }
+      });
