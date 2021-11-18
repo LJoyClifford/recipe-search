@@ -57,3 +57,41 @@ div.section {
     text-shadow: -1px -1px 0 rgb(247, 241, 241), 1px -1px 0 rgb(247, 241, 241),
         -1px 1px 0 rgb(247, 241, 241), 1px 1px 0 rgb(247, 241, 241);
 }
+
+.list-items {
+    list-style: none;
+}
+
+#title {
+    font: bolder;
+    padding: .5em;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 rgb(247, 241, 241), 1px -1px 0 rgb(247, 241, 241),
+        -1px 1px 0 rgb(247, 241, 241), 1px 1px 0 rgb(247, 241, 241);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.show-card {
+    border: solid;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    border-color: #fe0505;
+    background-color: #ffffff;
+    margin: .5em;
+    padding: .5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: auto;
+}
+
+.show-card h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
