@@ -99,3 +99,23 @@ img {
     box-shadow: 0 8px 16px 0 rgba(218, 31, 31, .685);
     }
     
+    #shows-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+        
+        input[type="search"]:not(.edit-input) {
+        border: 0;
+        box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+        margin: 8px 0;
+        display: block;
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-align: center;
+        color: black;
+        letter-spacing: 0.1em;
+        padding: .5em;
+        text-shadow: -1px -1px 0 rgb(247, 241, 241), 1px -1px 0 rgb(247, 241, 241),
+            -1px 1px 0 rgb(247, 241, 241), 1px 1px 0 rgb(247, 241, 241);
+        }
