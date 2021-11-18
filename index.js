@@ -70,3 +70,8 @@ searchInputDom.addEventListener("keypress", function (e) {
       };
       likeBtn.classList.add("likeBtn");
       recipeContainer.appendChild(likeBtn);
+
+      let closeBtn = document.createElement("button");
+      closeBtn.classList.add("close");
+      closeBtn.innerText = "x";
+      recipeContainer.appendChild(closeBtn);  
