@@ -21,3 +21,13 @@ div.section {
     text-align: center;
     margin: 0 auto;
 }
+
+#title-section {
+    height: 5em;
+}
+
+#background, 
+#recipes {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
