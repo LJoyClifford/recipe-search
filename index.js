@@ -82,3 +82,11 @@ searchInputDom.addEventListener("keypress", function (e) {
       fetch(
         `https://api.spoonacular.com/recipes/${recipe.id}/information?apiKey=${apiKey}`
       )
+
+      .then((respond) => respond.json())
+      .then((recipe) => {
+        let summaryDom = document.createElement("div");
+        summaryDom.classList.add("summary");
+        summaryDom.innerHTML = recipe.summary;
+        recipeContainer.appendChild(summaryDom);
+        recipeContainer.classList.add("selected");
