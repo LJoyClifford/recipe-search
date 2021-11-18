@@ -75,3 +75,10 @@ searchInputDom.addEventListener("keypress", function (e) {
       closeBtn.classList.add("close");
       closeBtn.innerText = "x";
       recipeContainer.appendChild(closeBtn);  
+
+      recipesListDom.appendChild(recipeContainer);
+
+    title.addEventListener("click", function () {
+      fetch(
+        `https://api.spoonacular.com/recipes/${recipe.id}/information?apiKey=${apiKey}`
+      )
