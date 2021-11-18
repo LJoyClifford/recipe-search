@@ -49,3 +49,24 @@ searchInputDom.addEventListener("keypress", function (e) {
           title.innerText = "Add this recipe to favorites";
         }
       });
+     likeBtn.addEventListener("mouseleave", function () {
+        title.innerText = recipe.title;
+      });
+      likeBtn.onclick = function (e) {
+        e.stopPropagation();
+
+        recipeContainer.classList.toggle("liked");
+        if (recipeContainer.classList.contains("liked")) {
+          favoriteList.push(recipe);
+          title.innerText = "Remove this recipe from favorites";
+        } else {
+          let recipeIndexToRemove = favoriteList.findIndex(function (rec) {
+            return rec.id == recipe.id;
+          });
+          favoriteList.splice(recipeIndexToRemove, 1);
+          title.innerText = "Add this recipe to favorites";
+        }
+        favoriteAmountDom.innerText = favoriteList.length;
+      };
+      likeBtn.classList.add("likeBtn");
+      recipeContainer.appendChild(likeBtn);
