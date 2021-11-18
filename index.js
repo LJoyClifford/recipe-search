@@ -27,3 +27,10 @@ searchInputDom.addEventListener("keypress", function (e) {
       title.classList.add("title");
       title.innerText = recipe.title;
       recipeContainer.appendChild(title);
+
+      recipeContainer.addEventListener("mouseover", function () {
+        title.innerText = "Open this recipe";
+      });
+      recipeContainer.addEventListener("mouseleave", function () {
+        title.innerText = recipe.title;
+      });
