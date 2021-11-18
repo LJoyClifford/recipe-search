@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/reset.css">
+<script defer src="js/index.js"></script>
+<title>Recipes</title>
 </head>
 <body>
-    
+
+<div class="hide" id="message-banner"></div>
+<div class="section" id="title-section">
+    <h2>Recipes</h2>
+</div>
+<div class="section" id="background">
+    <div id="header-img"></div>
+</div>
+<div class="section" id="search">
+    <input type="text" id="search-input" placeholder="Start typing an ingredient and then press enter">
+</div>
+<div class="section" id="recipes">
+    <h2 id="recipes-header">Favorite Recipes (<span id="favoriteAmount">0</span>)</h2>
+    <ul id="recipes-list"></ul>
+</div>
+<footer class="branding">
+    <small>&copy; 2021 <strong>RecipeSearch</strong></small>
+</footer>
 </body>
 </html>
