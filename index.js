@@ -14,3 +14,16 @@ searchInputDom.addEventListener("keypress", function (e) {
     } 
     console.log("you pressed", e.key);
   });
+
+  function renderRecipes(list) {
+    let recipesListDom = document.querySelector("#recipes-list");
+
+    recipesListDom.innerHTML = "";
+    list.forEach((recipe) => {
+      let recipeContainer = document.createElement("div");
+      recipeContainer.classList.add("recipe");
+
+      let title = document.createElement("div");
+      title.classList.add("title");
+      title.innerText = recipe.title;
+      recipeContainer.appendChild(title);
