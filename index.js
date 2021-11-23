@@ -5,7 +5,9 @@ let favoriteAmountDom = document.querySelector("#favoriteAmount");
 
 searchInputDom.addEventListener("keypress", function (e) {
     let ingredients = e.target.value;
+   
     if (e.key === "Enter") {
+      searchInputDom.value = "";
       fetch(
         `https://api.spoonacular.com/recipes/complexSearch?includeIngredients=${ingredients}&apiKey=${apiKey}`
       )
@@ -85,10 +87,10 @@ searchInputDom.addEventListener("keypress", function (e) {
       
       .then((respond) => respond.json())
       .then((recipe) => {
-        let summaryDom = document.createElement("div");
-        summaryDom.classList.add("summary");
-        summaryDom.innerHTML = recipe.summary;
-        recipeContainer.appendChild(summaryDom);
+        let instructionsDom = document.createElement("div");
+        instructionsDom.classList.add("instructions");
+        instructionsDom.innerHTML = recipe.instructions;
+        recipeContainer.appendChild(instructionsDom);
         recipeContainer.classList.add("selected");
 
         closeBtn.onclick = function (e) {
